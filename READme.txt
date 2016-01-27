@@ -1,6 +1,6 @@
 
 
-                                             ANM LABS ASSIGNMENT-4
+                          ANM LABS ASSIGNMENT-4
 
 SUBMITTED TO PATRIK ARLOS
 
