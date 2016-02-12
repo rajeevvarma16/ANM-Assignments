@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+
+
+sub test{
+  my ($a, $b, $c) = @_;
+
+
+foreach($i=0; $i < 3; $i++){
+print "@_[$i]\n";}
+}
+
+# call the test sub with the parameters
+test('alice', 'bob', 'charlie')

@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+use Net::SNMP;
+use DBD::mysql;
+use DBI;
+use Net::SNMP;
+use Cwd;
+my $dir = getcwd();
+@array = split(/'/'/,$dir);
+print "$array[0]";
+

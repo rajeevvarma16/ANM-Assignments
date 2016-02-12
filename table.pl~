@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+
+
+use Net::SNMP;
+use DBD::mysql;
+use DBI;
+use Net::SNMP;
+require "db.conf";
+
+
+#connect to the database
+$dbh= DBI->connect("DBI:mysql:database=$database;host=$host",  $username, $password);
+#create table
+ $dbh->do("CREATE TABLE foo (id INTEGER, name VARCHAR(20))");
+ $dbh->do("INSERT INTO foo VALUES (?, ?)", undef, 2, "Jochen");

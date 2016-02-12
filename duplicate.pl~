@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+use Net::SNMP;
+use DBD::mysql;
+use DBI;
+use Net::SNMP;
+require "db.conf";
+
+
+$dbh= DBI->connect("DBI:mysql:database=$database;host=$host",  $username, $password);
+
+$dbh->do("CREATE TABLE IF NOT EXISTS FOO (A INT PRIMARY KEY AUTO_INCREMENT, B INT NOT NULL, C INT(11) NOT NULL)");
+$dbh->do("INSERT INTO FOO (A, B, C)  VALUES(1, 2, 3) ON DUPLICATE KEY UPDATE A=A,B=B,c=c");
+

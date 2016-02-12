@@ -1,0 +1,5 @@
+#!/usr/bin/perl
+$time= localtime();
+print "$time";
+@time1= split(" ",$time);
+print"$time1[3]\n\n"; 
