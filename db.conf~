@@ -1,0 +1,8 @@
+
+$host = "194.47.151.125";
+$port = "3306";
+$database = "et2536";
+$username = "et2536t7";
+$password = "konko";
+
+
